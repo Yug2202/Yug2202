@@ -2,111 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yugi Agency | Digital Marketing & E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDN – Elite Digital Nepal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+    }
     header {
-      background: linear-gradient(135deg, #1e90ff, #00b894);
-      color: #fff;
-      text-align: center;
+      background: linear-gradient(135deg, #1f2937, #4b5563);
+      color: white;
       padding: 4rem 1rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
-    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    header p { font-size: 1.2rem; margin-bottom: 1.5rem; }
-    .btn {
-      background: #fff;
-      color: #1e90ff;
-      padding: 10px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    nav a {
+      color: #fff !important;
+      font-weight: 600;
+      margin: 0 1rem;
     }
-    section { padding: 3rem 1rem; max-width: 1000px; margin: auto; }
-    h2 { color: #1e90ff; margin-bottom: 1rem; }
-    .services, .why-us { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .section-heading {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: #111827;
+    }
     .card {
-      background: #f8f8f8;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border: none;
+      transition: transform 0.3s ease;
     }
-    .contact {
-      background: #f1f1f1;
-      text-align: center;
-      padding: 2rem;
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
-    .contact p { margin: 1rem 0; }
     footer {
-      background: #111;
-      color: #aaa;
+      background: #111827;
+      color: #ccc;
       text-align: center;
-      padding: 1.5rem;
-    }
-    @media(max-width: 768px) {
-      .services, .why-us { grid-template-columns: 1fr; }
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Yugi Agency</h1>
-    <p>We build brands, boost traffic & convert leads with digital strategy</p>
-    <a href="#contact" class="btn">Get a Free Strategy Call</a>
+    <h1 class="display-4">EDN</h1>
+    <p class="lead">Elite Digital Nepal – Grow Your Brand Digitally</p>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>We are a passionate team of digital marketers and e-commerce strategists helping businesses grow online. From branding to sales funnels, we handle everything that drives your success.</p>
-  </section>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EDN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <section>
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Social Media Marketing</h3>
-        <p>Grow your brand presence and engagement with our targeted SMM strategies.</p>
+  <section id="team" class="container">
+    <h2 class="section-heading">Meet the Team</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Yug Shrestha</h3>
+          <p>Founder & Lead Strategist</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>SEO & Content Marketing</h3>
-        <p>Rank higher on Google and attract organic traffic that converts into customers.</p>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Niyam</h3>
+          <p>Content & Research</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Facebook & Google Ads</h3>
-        <p>Maximize ROI with our high-converting ad campaigns tailored for your niche.</p>
-      </div>
-      <div class="card">
-        <h3>Website Development</h3>
-        <p>We create fast, beautiful, and functional websites for growing your brand online.</p>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h3>Rijan</h3>
+          <p>Design & Media</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Why Choose Us?</h2>
-    <div class="why-us">
-      <div class="card">
-        <h3>Results-Driven</h3>
-        <p>We focus on KPIs that move the needle — not vanity metrics.</p>
+  <section id="services" class="container">
+    <h2 class="section-heading">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h4>Social Media Marketing</h4>
+          <p>Grow your presence on platforms like Instagram, Facebook, TikTok and more.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Affordable Plans</h3>
-        <p>Get agency-level service without breaking your budget.</p>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h4>SEO Optimization</h4>
+          <p>Rank higher on Google with our modern, white-hat SEO strategies.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h4>Content Creation</h4>
+          <p>Eye-catching content tailored for your brand that converts viewers into customers.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h4>Brand Strategy</h4>
+          <p>Build a powerful and consistent brand that resonates with your audience.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Let’s Work Together</h2>
-    <p>Email us at <strong>your@email.com</strong></p>
-    <p>Or DM us on Instagram: <strong>@youragencyhandle</strong></p>
+  <section id="contact" class="container my-5">
+    <h2 class="section-heading">Contact Us</h2>
+    <div class="text-center">
+      <p><strong>Phone:</strong> 9810122996</p>
+      <p><strong>Email:</strong> yugshrestha2020@gmail.com</p>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Yugi Agency. All rights reserved. | Built with 💙 and coffee
+    <p>&copy; 2025 EDN (Elite Digital Nepal). All rights reserved.</p>
   </footer>
 
+  <script>
+    gsap.from("header", { opacity: 0, y: -50, duration: 1.5 });
+    gsap.from(".card", {
+      scrollTrigger: {
+        trigger: ".card",
+        toggleActions: "restart none none none"
+      },
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      stagger: 0.2
+    });
+  </script>
 </body>
 </html>
